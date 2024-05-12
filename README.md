@@ -1,4 +1,4 @@
 Personal-Portfolio
-Author - Soumi Samanta
+Author - thesoumisamanta
 <br>
 Created by using html, css and javascript

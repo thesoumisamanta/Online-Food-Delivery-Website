@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Bangali</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1450px)" href="phone.css">
+</head>
+
+<body>
+    <!-- ------------------------navbar----------------------- -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="">
+
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">About Us</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- ----------------home-------------------- -->
+    <section id="home">
+        <h1 class="h-primary"><strong>Welcome to the Foodie Bangali</strong></h1>
+        <p><strong>We are here to deliver delicious food from your preferred resturant.</strong></p>
+        <p><strong>Anywhere, anytime, we will reach you whenever you feel hungry.</strong></p>
+        <button class="btn">Order Now</button>
+
+    </section>
+    <!-- ----------------------services--------------------- -->
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img.jpg" alt="">
+                <h2 class="h-secondary center">Butter Chicken</h2>
+                <p class="center">Spicy Butter Chicken from Canteen 2</p>
+                <p class="center">Order anytime to enjoy this spicy dish</p>
+            </div>
+            <div class="box">
+                <img src="img1.jpg" alt="">
+                <h2 class="h-secondary center">Chicken Momo</h2>
+                <p class="center">hot and sour chicken momo with chicken soup</p>
+                <p class="center">Enjoy with the schezwan sauce</p>
+            </div>
+            <div class="box">
+                <img src="img2.jpg" alt="">
+                <h2 class="h-secondary center">Chicken Patties</h2>
+                <p class="center">healthy chiken patties stuffed with chicken nuggets</p>
+                <p class="center">Order from Just Baked and enjoy your snacks</p>
+            </div>
+            <div class="box">
+                <img src="img3.jpg" alt="">
+                <h2 class="h-secondary center">Veg Noodles</h2>
+                <p class="center">Noodles with healthy vegetables</p>
+                <p class="center">Make your children happy to order now from Second Wife</p>
+            </div>
+            <div class="box">
+                <img src="img4.jpg" alt="">
+                <h2 class="h-secondary center">Mix Rice</h2>
+                <p class="center">Fried rice with mixed vegetables, prawn and chicken</p>
+                <p class="center">Order now for a heavy lunch with butter chicken</p>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------about------------------ -->
+    <section class="client-section">
+        <h1 class="h-client center">Top Brand in Our City</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="domino.avif" alt="image 1">
+            </div>
+            <div class="client-item">
+                <img src="haldiram.avif" alt="image 2">
+            </div>
+            <div class="client-item">
+                <img src="kfc.avif" alt="image 3">
+            </div>
+            <div class="client-item">
+                <img src="buskin.webp" alt="image 4">
+            </div>
+            <div class="client-item">
+                <img src="wow momo.avif" alt="image 5">
+            </div>
+        </div>
+    </section>
+    <!-- -------------------contact------------------- -->
+    <section class="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter Your Email Id">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No:</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter Your Phone No">
+                </div>
+                <div class="form-group">
+                    <label for="message">message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.FoodieBangali.com. All rights reserved!
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetClass = this.getAttribute('href').substring(1);
+            const targetElement = document.querySelector('.' + targetClass);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
